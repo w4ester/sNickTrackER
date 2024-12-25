@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Changed from 'standalone' to 'export' for static deployment
+  output: 'export',
   images: {
     domains: ['cdnjs.cloudflare.com'],
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  basePath: '/sNickTrackER', // Add basePath for GitHub Pages
+  basePath: '/sNickTrackER',
   reactStrictMode: true,
   webpack: (config) => {
     config.resolve.fallback = { fs: false, net: false, tls: false };
