@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-[content of alert.jsx]
-=======
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn } from "@/lib/utils"
@@ -50,4 +47,3 @@ const AlertDescription = React.forwardRef(({ className, ...props }, ref) => (
 AlertDescription.displayName = "AlertDescription"
 
 export { Alert, AlertTitle, AlertDescription }
->>>>>>> c30e78d (Add package-lock.json)
