@@ -1,6 +1,5 @@
 'use client';
 
-<<<<<<< HEAD
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap, ZoomControl } from 'react-leaflet';
 import { Globe, Gift, Clock, Plus, Trash2, AlertTriangle, Loader } from 'lucide-react';
@@ -15,12 +14,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-// Custom Santa icon
-=======
-// ... [previous imports remain the same]
-
 // Update the Santa icon to use SVG
->>>>>>> c30e78d (Add package-lock.json)
 const santaIcon = new L.Icon({
   iconUrl: '/santa-icon.svg',
   iconSize: [38, 38],
@@ -28,8 +22,26 @@ const santaIcon = new L.Icon({
   popupAnchor: [0, -38],
 });
 
-<<<<<<< HEAD
-[rest of SantaTrackerMap.js content]
-=======
-// ... [rest of the file remains exactly the same]
->>>>>>> c30e78d (Add package-lock.json)
+function SantaTrackerMap() {
+  const mapRef = useRef();
+
+  useEffect(() => {
+    // Example effect
+  }, []);
+
+  return (
+    <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} ref={mapRef}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      />
+      <Marker position={[51.505, -0.09]} icon={santaIcon}>
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+    </MapContainer>
+  );
+}
+
+export default SantaTrackerMap;
