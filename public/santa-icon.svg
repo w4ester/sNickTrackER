@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+  <!-- Santa hat -->
+  <path d="M19 5 L28 15 L10 15 Z" fill="#ff0000"/>
+  <circle cx="19" cy="5" r="3" fill="#ffffff"/>
+  
+  <!-- Face -->
+  <circle cx="19" cy="22" r="12" fill="#ffe0bd"/>
+  
+  <!-- Beard -->
+  <path d="M19 18 Q19 30 19 32 Q12 32 10 25 Q10 20 19 18" fill="#ffffff"/>
+  <path d="M19 18 Q19 30 19 32 Q26 32 28 25 Q28 20 19 18" fill="#ffffff"/>
+  
+  <!-- Eyes -->
+  <circle cx="15" cy="20" r="1.5" fill="#000000"/>
+  <circle cx="23" cy="20" r="1.5" fill="#000000"/>
+  
+  <!-- Nose -->
+  <circle cx="19" cy="23" r="2" fill="#ff9999"/>
+</svg>
